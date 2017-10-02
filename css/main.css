@@ -1,0 +1,14 @@
+/* http://www.dolcebytintolino.com/meta-content/themes/dolce/img/dolce-head-under.jpg */
+  /* background-color: #f75a56; */
+
+.site-header {
+    background-color: pink
+  }
+
+.navbar-brand{
+  color: #fa2a2a !important;
+  font-family: Poppins, sans-serif;
+  font-size: 27px;
+  letter-spacing: .5px !important;
+  margin-left: 25px;
+}
