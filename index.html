@@ -7,60 +7,109 @@
     <meta charset="UTF-8">
     <meta name="description" content="Portfolio for Full Stack Web Developer Mary Northrup in San Francisco Bay Area">
     <meta name="keywords" content="vcard, html5, portfolio">
-    <meta http-equiv="X-UA-Compatible " content="ie=edge ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- favicon -->
-    <link rel="icon" type="image/png" href="favicon.png">
-
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <!-- BOOTSTRAP CDN -->
-    <link rel="stylesheet " href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css
-        " integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M " crossorigin="anonymous ">
-    <!-- FONTS -->
-    <link rel="stylesheet " href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins ">
-    <script src="https://use.fontawesome.com/55531d5bbe.js "></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css
+        " integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <!-- STYLES -->
-    <link rel="stylesheet " type="text/css " href="css/main.css ">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins">
+    <script src="https://use.fontawesome.com/55531d5bbe.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css ">
 </head>
 
 <body>
-
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top site-header">
+    <nav class="navbar navbar-expand-md navbar-light navbar-fixed-top site-header" id="main-nav">
+        <h1><a class="navbar-brand js-scroll-trigger" href="#top">hi, i'm mary</a></h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
             aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa fa-bars" aria-hidden="false"></i>
         </button>
         <div id="navbarNavDropdown" class="navbar-collapse collapse">
-            <ul class="navbar-nav mr-auto">
+            <span class="mr-auto"></span>
+            <!-- <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
                     <h1><a class="navbar-brand page-scroll" href="#home">hi, i'm mary</a></h1>
                 </li>
-            </ul>
+            </ul> -->
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#about">About</a>
+                    <a class="nav-link scroll-link" href="#about" data-id="about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#projects">Projects</a>
+                    <a class="nav-link scroll-link" href="#projects" data-id="projects">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="./assets/mary_northrup_resume.pdf">Resume</a>
+                    <a class="nav-link scroll-link" href="./assets/mary_northrup_resume.pdf">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    <a class="nav-link scroll-link" href="#contact" data-id="projects">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <section class="header">
+    <!-- LANDING PAGE -->
+    <section class="header hero">
         <div class="background-image" style="background-image: url(http://www.dolcebytintolino.com/meta-content/themes/dolce/img/dolce-head-under.jpg);"></div>
+        <div class="background-image-overlay"></div>
         <div class="hero-content">
             <h1>Mary Northrup</h1>
             <h3>Full Stack Web Developer</h3>
-            <a class="smoothScroll" href="#about"><img id="press" src="http://gowingwoman.com/img/menu_down_arrow.png"></a>
+            <a href="#projects"><button type="button" class="button button-default center-block">VIEW PROJECTS</button></a>
         </div>
     </section>
+    <!-- PROJECTS -->
+    <section class="projects showcase" id="projects">
+        <div class="col-sm-12 col-md-12 col-lg-12 center">
+            <h3 class="section-header">Projects
+            </h3>
+            <div id="sprint"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <h3 class="margin-top-0 red">SPRINT</h3>
+                        <p class="open-sans-light left-border" style="margin-top:25px;margin-bottom:50px">
+                            As the company's sole developer and technical consultant, I worked closely with the Lead Designer who shipped me Photoshop
+                            mockups for immediate coding. I translated her mockups faithfully and with precision to create
+                            a responsive, UX-first web experience.
+                            <br>
+                            <br> I taught myself Shopify's Ruby on Rails-based framework (Liquid) in just 1 week. The website
+                            was deployed in less than a month and is now being used in the UK and US.
+                            <br>
+                            <br> Conversions increased by 25% and dropoffs decreased by 58%.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class=" projects showcase ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-6 col-sm-6 ">
+                    <div class="showcase-left ">
+                        <img src="https://i.imgur.com/AGWGE0F.jpg ">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 ">
+                    <div class="showcase-right ">
+                        <h1></h1>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <i class="devicon-ruby-plain colored "></i> -->
+
     <!-- 
     <div class=" header d-flex align-items-center ">
         <h1 class="header-text ">Mary Northrup</h1>
@@ -97,7 +146,7 @@
                     </li>
                     <li>
                         <a class="btn btn-small " href=" " target="_blank "><i class="fa fa-github fa-2x icon
-            " aria-hidden="true "></i></a>
+                " aria-hidden="true "></i></a>
                     </li>
 
                 </ul>
@@ -105,14 +154,17 @@
         </div>
 
     </div> -->
-    <!-- SCRIPTS -->
-    <script type=" text/javascript " src="assets/js/app.js "></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
-        crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js " integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4 "
-        crossorigin="anonymous "></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js " integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1 "
         crossorigin="anonymous "></script>
+    <!-- PLUGIN JAVASCRIPT -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js "></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script type=" text/javascript " src="assets/scripts/app.js "></script>
 </body>
 
 </html>
