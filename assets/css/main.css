@@ -361,7 +361,16 @@ a[title="contact-link"] {
 
 footer {
   color: #333;
-  padding: 20px;
-  text-align: center;
+  padding: 30px;
   background-color: #EAEDED;
+  align-content: flex-start;
+  flex-direction: row;
+  justify-content: center;
+}
+
+a[title="footer-link"] {
+  color: black !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  opacity: .55;
 }
