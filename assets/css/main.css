@@ -1,9 +1,3 @@
-/* http://www.dolcebytintolino.com/meta-content/themes/dolce/img/dolce-head-under.jpg */
-
-
-/* background-color: #f75a56; */
-
-
 /* GENERAL STYLES */
 
 * {
@@ -34,7 +28,7 @@ a:focus {
 }
 
 .primary {
-  border-color: #FF6779;
+  border-color: #EC1E41;
   border-width: 3px;
   max-width: 50px;
 }
@@ -64,7 +58,7 @@ a:focus {
 }
 
 .navbar-brand {
-  color: #fa2a2a !important;
+  color: #EC1E41 !important;
   font-family: Poppins, sans-serif;
   font-size: 27px;
   letter-spacing: .5px !important;
@@ -72,11 +66,11 @@ a:focus {
 
 .nav-link {
   padding-right: 20px !important;
-  color: #fa2a2a !important;
+  color: #EC1E41 !important;
 }
 
 .fa-bars {
-  color: #fa2a2a
+  color: #EC1E41
 }
 
 
@@ -144,7 +138,7 @@ a:focus {
 
 .button-default {
   border: 1px solid #fff;
-  color: #C40C3E;
+  color: #EC1E41;
   background-position: 0 -50%;
   background-repeat: repeat-x;
   transition: background-position 3s ease;
@@ -154,12 +148,12 @@ a:focus {
 .button-default:hover {
   background-position: 100% 60%;
   color: #FFFFFF !important;
-  background-color: #9C99A0;
+  background-color: #EC1E41;
 }
 
 a,
 button.button-default {
-  transition: 2s ease;
+  transition: 1.5s ease;
 }
 
 a,
