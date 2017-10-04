@@ -147,14 +147,14 @@ a:focus {
   color: #C40C3E;
   background-position: 0 -50%;
   background-repeat: repeat-x;
-  transition: background-position 2s ease;
+  transition: background-position 3s ease;
   background-color: #fff;
-  background-image: url('https://i.imgur.com/on20kPX.png');
 }
 
 .button-default:hover {
   background-position: 100% 60%;
   color: #FFFFFF !important;
+  background-color: #9C99A0;
 }
 
 a,
