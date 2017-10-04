@@ -148,17 +148,17 @@ a:focus {
 .button-default:hover {
   background-position: 100% 60%;
   color: #FFFFFF !important;
-  background-color: #EC1E41;
+  background-color: #9C99A0;
 }
 
 a,
 button.button-default {
   transition: 1.5s ease;
+  border: 0;
 }
 
-a,
-button.button-default:hover {
-  text-decoration: none !important;
+.button.button-default:focus {
+  border: 0;
 }
 
 
