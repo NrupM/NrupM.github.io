@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css
         " integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <!-- STYLES -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Poppins">
     <script src="https://use.fontawesome.com/55531d5bbe.js"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -33,11 +33,6 @@
         </button>
         <div id="navbarNavDropdown" class="navbar-collapse collapse">
             <span class="mr-auto"></span>
-            <!-- <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <h1><a class="navbar-brand page-scroll" href="#home">hi, i'm mary</a></h1>
-                </li>
-            </ul> -->
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link scroll-link" href="#about" data-id="about">About</a>
@@ -49,7 +44,7 @@
                     <a class="nav-link scroll-link" href="./assets/mary_northrup_resume.pdf">Resume</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link scroll-link" href="#contact" data-id="projects">Contact</a>
+                    <a class="nav-link scroll-link" href="#contact" data-id="contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -61,20 +56,78 @@
         <div class="hero-content">
             <h1>Mary Northrup</h1>
             <h3>Full Stack Web Developer</h3>
-            <a href="#projects"><button type="button" class="button button-default center-block">VIEW PROJECTS</button></a>
+            <a href="#projects" class="scroll-link" data-id="projects"><button type="button" class="button button-default center-block">VIEW PROJECTS</button></a>
         </div>
     </section>
     <!-- PROJECTS -->
-    <section class="projects showcase" id="projects">
-        <div class="col-sm-12 col-md-12 col-lg-12 center">
-            <h3 class="section-header">Projects
-            </h3>
-            <div id="sprint"></div>
+    <section class="projects showcase">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <h2 class="section-header" id="projects">Projects
+            </h2>
+            <div>
+                <hr class="primary" />
+            </div>
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                        <h3 class="margin-top-0 red">SPRINT</h3>
-                        <p class="open-sans-light left-border" style="margin-top:25px;margin-bottom:50px">
+                <div class="row" id="sprint">
+                    <div class="col-sm-12 col-md-7 col-lg-7 breathing-room proj-one" id="sprint-info">
+                        <h3 class="margin-top-0 blue">Sprint</h3>
+                        <p class="open-sans-light left-border" style="margin-top:25px;margin-bottom:25px">
+                            SPRINT is a personal navigation tool for the everyday commute. Enter your destination address and the app calculates whether
+                            driving or taking public transit would get you there faster.
+                            <br>
+                            <br> I decided to build this app because it solves an issue that many people face during their
+                            daily commute. When determining how long a trip will take via public transportation, Google Maps
+                            does not take real-time bus vehicle arrivals into account, resulting in a skewed idea of total
+                            trip duration. SPRINT solves this problem by including bus stop arrivals and showing you your
+                            transit vehicles actual location.
+                            <br>
+                            <br> This was the first project where I owned both the design and development. Sprint was designed
+                            and built in 1 week.
+                        </p>
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <p class="open-sans-regular margin-bottom-0">ROLE</p>
+                                <p class="open-sans-light margin-bottom-0">Full Stack Web Developer</p>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <p class="open-sans-regular margin-bottom-0">TOOLBOX</p>
+                                <ul class="icon-list open-sans-light">
+                                    <li><i class="devicon-react-original colored"></i> React
+                                    </li>
+                                    <li><i class="devicon devicon-nodejs-plain colored"></i> Node.js
+                                    </li>
+                                    <li><i class="devicon devicon-express-original colored"></i> Express.js
+                                    </li>
+                                    <li><i class="devicon devicon-javascript-plain colored"> </i> JavaScript
+                                    </li>
+                                    <li><i class="devicon devicon-css3-plain colored"> </i>CSS
+                                    </li>
+                                    <li><i class="devicon devicon-html5-plain colored"> </i>HTML
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-5 sprint-img" id="sprint-info">
+                        <div class="picContainer">
+                            <img src="https://i.imgur.com/ZJvNKFj.jpg" width="100%" class="z-depth-3 project-img" alt="Sprint Project" title="Sprint Project">
+                            <div class="overlay">
+                                <a href="https://sprint-io.herokuapp.com" target="_blank">
+                                    <div class="text">View App</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid divider">
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row" id="outfitter">
+                    <div class="col-sm-12 col-md-7 col-lg-7 breathing-room proj-one" id="outfitter-info">
+                        <h3 class="margin-top-0 blue">Outfitter</h3>
+                        <p class="open-sans-light left-border" style="margin-top:25px;margin-bottom:25px">
                             As the company's sole developer and technical consultant, I worked closely with the Lead Designer who shipped me Photoshop
                             mockups for immediate coding. I translated her mockups faithfully and with precision to create
                             a responsive, UX-first web experience.
@@ -84,81 +137,80 @@
                             <br>
                             <br> Conversions increased by 25% and dropoffs decreased by 58%.
                         </p>
-
+                        <div class="row">
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <p class="open-sans-regular margin-bottom-0">ROLE</p>
+                                <p class="open-sans-light margin-bottom-0">Full Stack Web Developer</p>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <p class="open-sans-regular margin-bottom-0">TOOLBOX</p>
+                                <ul class="icon-list open-sans-light">
+                                    <li><i class="devicon devicon-ruby-plain colored"></i> Ruby
+                                    </li>
+                                    <li><i class="devicon devicon-rails-plain colored"></i> Rails
+                                    </li>
+                                    <li><i class="devicon devicon-javascript-plain colored"> </i> JavaScript
+                                    </li>
+                                    <li><i class="devicon devicon-css3-plain colored"> </i>CSS
+                                    </li>
+                                    <li><i class="devicon devicon-html5-plain colored"> </i>HTML
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-5 breathing-room outfitter-img" id="outfitter-info">
+                        <div class="picContainer">
+                            <img src="assets/img/outfitter_screenshot.jpeg" width="100%" class="z-depth-3 project-img" alt="Outfitter Project" title="Outfitter Project">
+                            <div class="overlay">
+                                <a href="https://outfitters1.herokuapp.com" target="_blank">
+                                    <div class="text">View App</div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
     </section>
-    <section class=" projects showcase ">
-        <div class="container ">
-            <div class="row ">
-                <div class="col-md-6 col-sm-6 ">
-                    <div class="showcase-left ">
-                        <img src="https://i.imgur.com/AGWGE0F.jpg ">
-                    </div>
+    <div class="container-fluid divider">
+        <hr>
+    </div>
+    <section>
+        <div class="contact container" id="contact">
+            <header class="contact-header">
+                <div class="contact-header-cta">
+                    <p class="contact-super-title">You're in the right place</p>
+                    <h2 class="contact-headline">let's chat</h2>
                 </div>
-                <div class="col-md-6 col-sm-6 ">
-                    <div class="showcase-right ">
-                        <h1></h1>
-                    </div>
-
+                <div class="contact-header-details flex-row">
+                    <ul>
+                        <li class="contact-header-email"><a href="mailto:maryenorthrup@gmail.com" title="contact-link"><i class="fa fa-envelope-o fa-1x icon" aria-hidden="true"></i> maryenorthrup@gmail.com</a></li>
+                        <li class="contact-header-email"><a href="tel:503-502-1411" title="contact-link"><i class="fa fa-phone fa-1x icon" aria-hidden="true"></i> 503.502.1411</a></li>
+                    </ul>
                 </div>
-            </div>
+                <form action="https://formspree.io/maryenorthrup@gmail.com" method="POST">
+                    <div class="contact-info-group">
+                        <label class="name"><span></span><input type="text" name="name" placeholder="Name"></label>
+                        <label class="email"><span></span>
+                        <input type="email" name="_replyto" placeholder="Email"></label>
+                    </div>
+                    <label><span></span>
+                    <textarea name="message" placeholder="Tell me about your project"></textarea></label>
+                    <div class="btn form-btn"><input type="submit" value="Send"></div>
+                </form>
+            </header>
 
         </div>
+
     </section>
+    <footer> &copy; <span id="year"></span> Mary Northrup
+    </footer>
 
-    <!-- <i class="devicon-ruby-plain colored "></i> -->
-
-    <!-- 
-    <div class=" header d-flex align-items-center ">
-        <h1 class="header-text ">Mary Northrup</h1>
-        <h4 class="header-sub-text ">
-            Full Stack Developer
-        </h4>
-    </div> -->
-
-    <!-- <div class=" container-fluid ">
-        <div class="row site-header ">
-            <div class="col d-flex align-items-start ">
-                <ul class="list-items align-items-start ">
-                    <li>
-                        <a class="page-scroll " href="https://marynorthrup.com/#about ">about</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll " href="https://marynorthrup.com/#projects ">projects</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll " href="./assets/mary_northrup_resume.pdf ">resume</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col ">
-                <h1>mary northrup</h1>
-            </div>
-            <div class="col ">
-                <ul>
-                    <li>
-                        <a class="page-scroll " href="https://marynorthrup.com/#about ">about</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll " href="https://marynorthrup.com/#projects ">projects</a>
-                    </li>
-                    <li>
-                        <a class="btn btn-small " href=" " target="_blank "><i class="fa fa-github fa-2x icon
-                " aria-hidden="true "></i></a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-
-    </div> -->
     <!-- BOOTSTRAP SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js " integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4 "
+        crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js " integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1 "
         crossorigin="anonymous "></script>
     <!-- PLUGIN JAVASCRIPT -->
