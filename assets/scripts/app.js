@@ -1,6 +1,9 @@
 $(document).ready(function () {
-    $('.slide-section').click(function (e) {
-        alert('Clicked');
+    $('.scroll-nav').click(function (e) {
+        const linkHref = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(linkHref).offset().top
+        }, 1000);
         e.preventDefault()
     })
 })

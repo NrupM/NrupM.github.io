@@ -39,11 +39,11 @@ a:focus {
   max-width: 50px;
 }
 
-.open-sans-regular {
+.paragraph-title-text {
   font-family: 'Open Sans', sans-serif !important;
 }
 
-.open-sans-light {
+.paragraph-text {
   font-family: 'Open Sans', sans-serif !important;
   font-weight: 300 !important;
 }
