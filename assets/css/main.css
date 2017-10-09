@@ -87,6 +87,30 @@ a:focus {
 }
 
 
+/* SCROLL TOP BUTTON */
+
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 10px;
+  z-index: 9999;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  color: rgba(178, 178, 178, 0.8);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#scrollTopBtn:hover {
+  background: rgba(187, 187, 187, 0.7);
+  color: #333;
+  opacity: .65;
+}
+
+
 /* LANDING PAGE*/
 
 .hero {
@@ -133,7 +157,7 @@ a:focus {
 }
 
 
-/* BUTTON */
+/* CENTERED PROJECT BUTTON */
 
 .button {
   margin-top: 10px;
