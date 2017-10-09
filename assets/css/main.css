@@ -51,6 +51,19 @@ a:focus {
 }
 
 
+/* MEDIA */
+
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 4.375rem;
+    line-height: 1.07143;
+  }
+  #scrollTopBtn {
+    display: none !important;
+  }
+}
+
+
 /* NAVBAR */
 
 .site-header {
@@ -71,6 +84,30 @@ a:focus {
 
 .fa-bars {
   color: #EC1E41
+}
+
+
+/* SCROLL TOP BUTTON */
+
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  z-index: 9999;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  color: rgba(178, 178, 178, 0.8);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#scrollTopBtn:hover {
+  background: rgba(187, 187, 187, 0.7);
+  color: #333;
+  opacity: .65;
 }
 
 
@@ -119,15 +156,8 @@ a:focus {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 768px) {
-  .hero h1 {
-    font-size: 4.375rem;
-    line-height: 1.07143;
-  }
-}
 
-
-/* BUTTON */
+/* CENTERED PROJECT BUTTON */
 
 .button {
   margin-top: 10px;
@@ -159,6 +189,7 @@ button.button-default {
 
 .button.button-default:focus {
   border: 0;
+  outline: none !important;
 }
 
 
