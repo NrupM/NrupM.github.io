@@ -92,7 +92,7 @@ a:focus {
 #scrollTopBtn {
   display: none;
   position: fixed;
-  bottom: 80px;
+  bottom: 100px;
   right: 10px;
   z-index: 9999;
   border: none;
@@ -189,6 +189,7 @@ button.button-default {
 
 .button.button-default:focus {
   border: 0;
+  outline: none !important;
 }
 
 
