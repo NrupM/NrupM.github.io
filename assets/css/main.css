@@ -51,6 +51,19 @@ a:focus {
 }
 
 
+/* MEDIA */
+
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 4.375rem;
+    line-height: 1.07143;
+  }
+  #scrollTopBtn {
+    display: none !important;
+  }
+}
+
+
 /* NAVBAR */
 
 .site-header {
@@ -117,13 +130,6 @@ a:focus {
 .hero h3 {
   font: normal 28px "Open Sans", sans-serif;
   margin-bottom: 40px;
-}
-
-@media screen and (max-width: 768px) {
-  .hero h1 {
-    font-size: 4.375rem;
-    line-height: 1.07143;
-  }
 }
 
 
